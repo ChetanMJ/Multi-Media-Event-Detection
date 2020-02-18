@@ -1,0 +1,30 @@
+### soundnet 10 layer ##########
+
+python scripts/select_frames_soundnet.py list/train.video 0.2 select.soundnet10.csv
+
+python scripts/train_kmeans.py select.soundnet10.csv 50 kmeans.50.soundnet10.model.npy
+
+python scripts/create_soundnet.py kmeans.50.soundnet10.model.npy 50 list/all.video
+
+
+
+
+
+
+
+
+## soundnet 16 layer ############
+
+python scripts/select_frames_soundnet.py list/train.video 0.2 select.soundnet16.csv
+
+python scripts/train_kmeans.py select.soundnet16.csv 50 kmeans.50.soundnet16.model.npy
+
+python scripts/create_soundnet.py kmeans.50.soundnet16.model_soundnet16_100in.npy 50 list/all.video
+
+
+## soundnet 16 layer gmm############
+
+python create_soundnet_gmm.py /home/ubuntu/multimedia/11775-hws-master/hw1_code/gmm_soundnet16 50 list/all.video
+
+
+sh run.med.soundnet.sh
