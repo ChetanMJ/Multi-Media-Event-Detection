@@ -1,0 +1,14 @@
+# Paths
+all_video_names: list/all.video
+video_path: /home/ubuntu/multimedia/11775-hws-master/videos
+downsampled_videos: /home/ubuntu/multimedia/11775-hws-master/hw2_code/downsampled_videos
+surf_features: /home/ubuntu/multimedia/11775-hws-master/hw2_code/surf
+
+# downsampling
+downsampling_frame_len: 60
+downsampling_frame_rate: 15
+keyframe_interval: 5
+
+# surf
+hessian_threshold: 400
+kmeans_cluster_num: 256
