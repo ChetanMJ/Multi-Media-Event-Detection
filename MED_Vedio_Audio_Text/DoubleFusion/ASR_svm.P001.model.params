@@ -1,0 +1,4 @@
+Average precision: 0.28753537365394105
+Kernel: sigmoid
+Regularization Param(C): 40.0
+Gamma: scale

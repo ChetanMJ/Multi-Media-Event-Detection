@@ -1,0 +1,4 @@
+Average precision: 0.803425232001629
+Kernel: rbf
+Regularization Param(C): 10.0
+Gamma: scale
