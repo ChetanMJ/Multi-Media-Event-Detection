@@ -1,7 +1,7 @@
 # Multimedia Event detection
 1. Detect events using only the audio features
 2. Detect events using only video features
-3. Detect events using both audio and video features
+3. Detect events using both audio,video and text features
 
 ### Code and execution details for each of these 3 projects are in respective folders
 ## For more details on experimentations and results for each part can be found in attached pdf documents in this main folder. 
