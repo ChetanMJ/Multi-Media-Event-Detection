@@ -1,3 +1,19 @@
+## Multimedia Event Detection using Audio
+
+The overview of MED pipeline is depicted in Fig. 1. In the first step, we extract features from the raw training data. Process videos and extract two kinds of visual features
+(SURF/CNN) to build video representations.. Implement the bag-of-words representation with k-means clustering. With the representations and the labels, one of the typical approaches to train a classifier is to use Support Vector Machines (SVMs). The trained SVM models are then to be used in the testing phase. For testing, we extract and pack video representations on the test data with the same parameters/models we use in the training phase. With the pre-trained classifiers, we then score the videos accordingly and calculate the average precision to evaluate our MED system.
+
+![MED_Pipeline](https://user-images.githubusercontent.com/46570073/103435242-26275e00-4bda-11eb-8b51-54a52afa4b15.jpg)
+
+## Dataset
+It contains 2935 videos, with 3 positive events (P001: assembling shelter; P002: batting in run; P003: making cake) and 1 negative event class (NULL). The data is hosted at S3. Please read README.md for more details. For training, the file all_trn.lst specifies 836 training videos and their labels. For validation, the file all_val.lst contains 400 videos and their ground-truth labels as well. You could use the validation set to tune hyper-parameters, conduct ablation studies and report your interesting findings in the report. For testing, there are additional 1699 videos specified in the all_test_fake.lst, in which their labels are all fake (deliberately set as NULL by us).
+
+## Experimentation and Results
+Please see attched pdf(MED_Vedio.pdf) in this same folder to see the experimentations and results in detail. Below is the snapshot of the best results
+
+
+
+## Execution details
 Full pipeline is given in the shell script **run.pipeline.sh**.
 
 You can pass pass arguments to this bash script defining which one of the steps (preprocessing: **p**, feature representation: **f**, MAP scores: **m**, kaggle results: **k**, yaml filepath: **y**) you want to perform.
