@@ -25,7 +25,7 @@ As shown in below Figure, for a practical MED system which relies on early fusio
 ![EarlyFusion](https://user-images.githubusercontent.com/46570073/103435657-a8fee780-4bdf-11eb-9b60-3f47f13dc5bb.jpg)
 
 ## Late Fusion
-As illustrated in below Figure, a MED system which uses late fusion for classification also starts with extracting different feature descriptors. In contrast to early fusion, where features are then combined into a multimodal representation, approaches for late fusion firstly learn separate supervised classifiers directly from unimodal features. In the test phase, the prediction scores from different models are then combined to yield a final score. In general, late fusion schemes combine learned unimodal scores into a multimodal representation. Compared to early fusion, late fusion focuses on the individual strength of modalities. 
+As illustrated in below Figure, a MED system which uses late fusion for classification also starts with extracting different feature descriptors. In contrast to early fusion, where features are then combined into a multimodal representation, approaches for late fusion firstly learn separate supervised classifiers directly from unimodal features. In the test phase, the prediction scores from different models are then combined to yield a final score. In general, late fusion schemes combine learned unimodal scores into a multimodal representation. Compared to early fusion, late fusion focuses on the individual strength of modalities.
 ![LateFusion](https://user-images.githubusercontent.com/46570073/103435658-a9977e00-4bdf-11eb-8712-d48fb04dc0e3.jpg)
 
 ## Double Fusion
