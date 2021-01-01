@@ -3,7 +3,7 @@
 2. Detect events using only video features
 3. Detect events using both audio and video features
 
-Details for each of these 3 projects are in respective folders
+### Code and execution details for each of these 3 projects are in respective folders
 
 ## Multimedia Event Detection using Audio
 
