@@ -4,6 +4,7 @@
 3. Detect events using both audio and video features
 
 ### Code and execution details for each of these 3 projects are in respective folders
+## For more details on experimentations and results for each part can be found in attached pdf documents in this main folder. 
 
 ## Multimedia Event Detection using Audio
 
@@ -36,6 +37,6 @@ In double fusion, we first perform early fusion to generate different combinatio
 Results from feature fusion technique is as below with highlighted result in greeen is the best results:
 ![results3](https://user-images.githubusercontent.com/46570073/103435677-07c46100-4be0-11eb-8cb1-de8b8b68a1d1.JPG)
 
-For more details on experimentations and results for each part can be found in attched pdf documents. 
+## For more details on experimentations and results for each part can be found in attached pdf documents in the main folder. 
 
 
