@@ -32,3 +32,10 @@ As illustrated in below Figure, a MED system which uses late fusion for classifi
 In double fusion, we first perform early fusion to generate different combinations of features from subsets on the single features pool. After that, we train classifiers on each feature or feature combination and carry out late fusion on the output of these classifiers. For example, as shown in below figure, we first extract three kinds of features (visual, audio and text) from three training and three testing videos. After that, pairwise early fusion (visual+audio, visual+text) are carried out in these three features based on their kernel matrices. In the training step, five classifiers are trained based on five features and feature combinations (visual, audio, text, visual+audio, visual+text). For each video, there are thus five output scores indicating how likely it is that this video belongs to the event. In the last step, late fusion is used to fuse five output score vectors into one score vector, on which the final interpretation can be executed.
 ![DoubleFusion](https://user-images.githubusercontent.com/46570073/103435659-a9977e00-4bdf-11eb-8496-8d42d930550c.jpg)
 
+## Results
+Results from feature fusion technique is as below with highlighted result in greeen is the best results:
+![results3](https://user-images.githubusercontent.com/46570073/103435677-07c46100-4be0-11eb-8cb1-de8b8b68a1d1.JPG)
+
+For more details on experimentations and results for each part can be found in attched pdf documents. 
+
+
