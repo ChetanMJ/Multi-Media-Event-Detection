@@ -14,4 +14,6 @@ training phase. With the pre-trained classifiers, we then score the videos accor
 ## Dataset
 It contains 2935 videos, with 3 positive events (P001: assembling shelter; P002: batting in run; P003: making cake) and 1 negative event class (NULL). The data is hosted at S3. Please read README.md for more details. For training, the file all_trn.lst specifies 836 training videos and their labels. For validation, the file all_val.lst contains 400 videos and their ground-truth labels as well. You could use the validation set to tune hyper-parameters, conduct ablation studies and report your interesting findings in the report. For testing, there are additional 1699 videos specified in the all_test_fake.lst, in which their labels are all fake (deliberately set as NULL by us).
 
+## Experimentation and Results
+Please see attche pdf to see the experimentations and results in detail. Below is the snapshot of the best results
 
