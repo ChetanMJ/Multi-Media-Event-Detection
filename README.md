@@ -22,11 +22,13 @@ It contains 2935 videos, with 3 positive events (P001: assembling shelter; P002:
 
 ## Early Fusion
 As shown in below Figure, for a practical MED system which relies on early fusion for decision, it firstly extracts individual features separately. The extracted features are then combined into a single vector representation for each video. A commonly used feature combination strategy is concatenating vectors from different feature extractors into a long vector. After combination of individual feature vectors for a multimodal representation, the supervised classifiers (such as SVM) are employed for classification.
+![EarlyFusion](https://user-images.githubusercontent.com/46570073/103435657-a8fee780-4bdf-11eb-9b60-3f47f13dc5bb.jpg)
 
 ## Late Fusion
 As illustrated in below Figure, a MED system which uses late fusion for classification also starts with extracting different feature descriptors. In contrast to early fusion, where features are then combined into a multimodal representation, approaches for late fusion firstly learn separate supervised classifiers directly from unimodal features. In the test phase, the prediction scores from different models are then combined to yield a final score. In general, late fusion schemes combine learned unimodal scores into a multimodal representation. Compared to early fusion, late fusion focuses on the individual strength of modalities. 
+![LateFusion](https://user-images.githubusercontent.com/46570073/103435658-a9977e00-4bdf-11eb-8712-d48fb04dc0e3.jpg)
 
 ## Double Fusion
 In double fusion, we first perform early fusion to generate different combinations of features from subsets on the single features pool. After that, we train classifiers on each feature or feature combination and carry out late fusion on the output of these classifiers. For example, as shown in below figure, we first extract three kinds of features (visual, audio and text) from three training and three testing videos. After that, pairwise early fusion (visual+audio, visual+text) are carried out in these three features based on their kernel matrices. In the training step, five classifiers are trained based on five features and feature combinations (visual, audio, text, visual+audio, visual+text). For each video, there are thus five output scores indicating how likely it is that this video belongs to the event. In the last step, late fusion is used to fuse five output score vectors into one score vector, on which the final interpretation can be executed.
-
+![DoubleFusion](https://user-images.githubusercontent.com/46570073/103435659-a9977e00-4bdf-11eb-8496-8d42d930550c.jpg)
 
